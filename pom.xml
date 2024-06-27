@@ -4,20 +4,20 @@
 
   <groupId>com.sencha.gxt</groupId>
   <artifactId>gxt-edash-parent</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>Sencha GXT Executive Dashboard Demo Parent</name>
   <packaging>pom</packaging>
 
   <properties>
-    <gxt.version>4.0.4-SNAPSHOT</gxt.version>
+    <gxt.version>4.2.0</gxt.version>
 
     <!-- Global build settings -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <!-- Global build versions -->
-    <java.version>1.7</java.version>
-    <gwt.version>2.7.0</gwt.version>
-    <gwt.plugin.version>2.7.0</gwt.plugin.version>
+    <java.version>11</java.version>
+    <gwt.version>2.11.0</gwt.version>
+    <gwt.plugin.version>1.1.0</gwt.plugin.version>
     <phantomjs.version>2.1.1</phantomjs.version>
 
     <!-- Global GWT compiler settings -->
