@@ -298,15 +298,15 @@
                       <goal>add-resource</goal>
                     </goals>
                   </pluginExecutionFilter>
-                  <action>
-                    <execute>
+                  <!-- <action> -->
+                    <!-- <execute> -->
                       <!-- run on maven update -->
                       <!-- <runOnConfiguration>true</runOnConfiguration> -->
                       <!-- run on workspace build -->
-                      <runOnConfiguration>true</runOnConfiguration>
-                      <runOnIncremental>false</runOnIncremental>
-                    </execute>
-                  </action>
+                      <!-- <runOnConfiguration>true</runOnConfiguration> -->
+                      <!-- <runOnIncremental>false</runOnIncremental> -->
+                    <!-- </execute> -->
+                  <!-- </action> -->
                 </pluginExecution>
               </pluginExecutions>
             </lifecycleMappingMetadata>
