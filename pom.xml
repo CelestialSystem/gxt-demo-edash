@@ -34,7 +34,7 @@
       -Dlicense=gpl -->
     <license>commercial</license>
     <license.fromYear>2006</license.fromYear>
-    <license.thruYear>2018</license.thruYear>
+    <license.thruYear>2024</license.thruYear>
     <license.email>licensing@sencha.com</license.email>
     <license.url>http://www.sencha.com/products/gxt/license/</license.url>
   </properties>
