@@ -304,7 +304,7 @@
                       <!-- <runOnConfiguration>true</runOnConfiguration> -->
                       <!-- run on workspace build -->
                       <runOnConfiguration>true</runOnConfiguration>
-                      <runOnIncremental>true</runOnIncremental>
+                      <runOnIncremental>false</runOnIncremental>
                     </execute>
                   </action>
                 </pluginExecution>
