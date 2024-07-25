@@ -38,10 +38,10 @@
 package com.sencha.gxt.edash.shared.model;
 
 import com.google.gwt.core.client.JavaScriptObject;
+import com.google.gwt.user.client.rpc.IsSerializable;
 
-import java.io.Serializable;
 
-public class ReportDownload extends JavaScriptObject implements Serializable {
+public class ReportDownload extends JavaScriptObject implements IsSerializable {
 
   public final native String getName() /*-{ return this.name; }-*/;
   public final native String getTitle() /*-{ return this.title; }-*/;

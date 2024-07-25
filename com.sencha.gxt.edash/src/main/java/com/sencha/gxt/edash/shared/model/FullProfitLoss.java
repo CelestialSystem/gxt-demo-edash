@@ -39,10 +39,10 @@ package com.sencha.gxt.edash.shared.model;
 
 import com.google.gwt.core.client.JavaScriptObject;
 
-import java.io.Serializable;
+import com.google.gwt.user.client.rpc.IsSerializable;
 
 
-public class FullProfitLoss extends JavaScriptObject implements Serializable {
+public class FullProfitLoss extends JavaScriptObject implements IsSerializable {
   protected FullProfitLoss() {
   }
 

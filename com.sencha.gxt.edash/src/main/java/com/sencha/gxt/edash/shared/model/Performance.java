@@ -38,12 +38,12 @@
 package com.sencha.gxt.edash.shared.model;
 
 import com.google.gwt.core.client.JavaScriptObject;
+import com.google.gwt.user.client.rpc.IsSerializable;
 
-import java.io.Serializable;
 import java.util.Date;
 
 
-public class Performance extends JavaScriptObject implements Serializable {
+public class Performance extends JavaScriptObject implements IsSerializable {
   private static double ID_COUNT = 0;
   private static double getNextId() {
     return ID_COUNT++;

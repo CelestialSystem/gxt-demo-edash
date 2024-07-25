@@ -9,15 +9,15 @@
   <packaging>pom</packaging>
 
   <properties>
-    <gxt.version>4.0.4-SNAPSHOT</gxt.version>
+    <gxt.version>4.2.0-SNAPSHOT</gxt.version>
 
     <!-- Global build settings -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <!-- Global build versions -->
-    <java.version>1.7</java.version>
-    <gwt.version>2.7.0</gwt.version>
-    <gwt.plugin.version>2.7.0</gwt.plugin.version>
+    <java.version>11</java.version>
+    <gwt.version>2.11.0</gwt.version>
+    <gwt.plugin.version>2.10.0</gwt.plugin.version>
     <phantomjs.version>2.1.1</phantomjs.version>
 
     <!-- Global GWT compiler settings -->
@@ -45,7 +45,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>versions-maven-plugin</artifactId>
-        <version>2.3</version>
+        <version>2.5</version>
         <executions>
           <execution>
             <phase>compile</phase>
@@ -68,7 +68,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.5.1</version>
+          <version>3.12.1</version>
           <configuration>
             <source>${java.version}</source>
             <target>${java.version}</target>
@@ -168,6 +168,11 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.google.inject</groupId>
+      <artifactId>guice</artifactId>
+      <version>5.1.0</version>
+    </dependency>
   </dependencies>
 
   <modules>
@@ -182,19 +187,20 @@
       <!-- ~/.m2/settings.xml add <server/> with the support portal credentials -->
       <id>sencha-gxt-repository</id>
       <name>Sencha GXT Repository</name>
-      <url>https://maven.sencha.com/repo/gxt-support-commercial-release</url>
+      <!-- <url>https://maven.sencha.com/repo/gxt-support-commercial-release</url>-->
+      <url>https://sencha.myget.org/F/gxt-sandbox/maven/</url>
       <!-- <url>https://maven.sencha.com/repo/gxt-commercial-snapshot</url> -->
     </repository>
-    <repository>
-      <id>snapshots-repo</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
+<!--    <repository>-->
+<!--      <id>snapshots-repo</id>-->
+<!--      <url>https://oss.sonatype.org/content/repositories/snapshots</url>-->
+<!--      <releases>-->
+<!--        <enabled>true</enabled>-->
+<!--      </releases>-->
+<!--      <snapshots>-->
+<!--        <enabled>true</enabled>-->
+<!--      </snapshots>-->
+<!--    </repository>-->
   </repositories>
 
   <!-- Maven Exec, it uses the theme builder -->
@@ -204,7 +210,8 @@
       <!-- ~/.m2/settings.xml add <server/> with the support portal credentials -->
       <id>sencha-gxt-repository</id>
       <name>Sencha GXT Repository</name>
-      <url>https://maven.sencha.com/repo/gxt-support-commercial-release</url>
+      <!--<url>https://maven.sencha.com/repo/gxt-support-commercial-release</url>-->
+      <url>https://sencha.myget.org/F/gxt-sandbox/maven/</url>
       <!-- <url>https://maven.sencha.com/repo/gxt-commercial-snapshot</url> -->
       <layout>default</layout>
       <snapshots>

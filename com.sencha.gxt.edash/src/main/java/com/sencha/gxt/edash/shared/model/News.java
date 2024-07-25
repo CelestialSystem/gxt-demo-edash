@@ -39,10 +39,11 @@ package com.sencha.gxt.edash.shared.model;
 
 
 import com.google.gwt.core.client.JavaScriptObject;
+import com.google.gwt.user.client.rpc.IsSerializable;
 
-import java.io.Serializable;
 
-public class News extends JavaScriptObject implements Serializable {
+
+public class News extends JavaScriptObject implements IsSerializable {
 
   public final native int getId() /*-{ return this.news_id; }-*/;
   public final native String getTitle() /*-{ return this.title; }-*/;
